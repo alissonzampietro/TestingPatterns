@@ -26,6 +26,11 @@ class UsuarioRepository
 
     public function persist(Usuario $usuario)
     {
-        
+        $insert = $this->conn->prepare("INSERT INTO ".$this->table."('nome','login','senha','ativo') VALUES (?,?,?,?)");
+        $insert->bindParam(1, $usuario->getNome());
+        $insert->bindParam(2, $usuario->getLogin());
+        $insert->bindParam(3, $usuario->getSenha());
+        $insert->bindParam(4, $usuario->getAtivo());
+        $insert->execute();
     }
 }

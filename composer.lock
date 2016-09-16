@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85b81d1a639a0f89c5221436842ded6a",
-    "content-hash": "470321f7c95d214f360eb3603a1a196b",
+    "hash": "62f96a5b9a4ecd584e0e6efce5f3dcdb",
+    "content-hash": "a5614d05903c5bbce490ab2ca4cac386",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -63,16 +63,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "94e5ca3e90aa5b34663780393e10914f7438f991"
+                "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/94e5ca3e90aa5b34663780393e10914f7438f991",
-                "reference": "94e5ca3e90aa5b34663780393e10914f7438f991",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
+                "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2016-09-07 15:34:10"
+            "time": "2016-09-16 13:37:59"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -691,6 +691,50 @@
                 "xunit"
             ],
             "time": "2016-09-06 16:07:45"
+        },
+        {
+            "name": "respect/rest",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Rest.git",
+                "reference": "4f60aa199623d738a3391ca1e80bafb754bc9308"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Rest/zipball/4f60aa199623d738a3391ca1e80bafb754bc9308",
+                "reference": "4f60aa199623d738a3391ca1e80bafb754bc9308",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Respect\\": "library/Respect"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Gaigalas",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "Respect/Data Contributors",
+                    "homepage": "https://github.com/Respect/Data/graphs/contributors"
+                }
+            ],
+            "description": "Thin controller for RESTful applications",
+            "homepage": "http://respect.li/",
+            "time": "2015-01-12 09:55:16"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

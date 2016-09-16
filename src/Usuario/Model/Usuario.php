@@ -11,6 +11,15 @@ class Usuario
     private $senha;
 
     private $ativo;
+    
+    private function validaDados($post)
+    {
+        var_dump(debug_backtrace());
+        exit;
+        
+        if(!empty($post) && !isset($post))
+            throw new \Exception("Campo errado");
+    }
 
     public function getNome()
     {
