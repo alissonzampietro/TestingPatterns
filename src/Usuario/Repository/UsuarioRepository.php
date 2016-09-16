@@ -7,22 +7,25 @@ use Pattern\Usuario\Model\Usuario;
 
 class UsuarioRepository
 {
-    
+
     private $table = "usuarios";
+
+    private $conn;
+
+    public function __construct()
+    {
+        $this->conn = Connection::getConnection();
+    }
 
     public function getUsuarioList()
     {
-         $conn = Connection::getConnection();
-         $row = $conn->prepare("SELECT * FROM ".$this->table);
-         $row->execute();
-         return $row->fetchAll(PDO::FETCH_ASSOC);
+        $row = $this->conn->prepare("SELECT * FROM " . $this->table);
+        $row->execute();
+        return $row->fetchAll(PDO::FETCH_ASSOC);
     }
-    
-    public function persist()
+
+    public function persist(Usuario $usuario)
     {
-        $usuario = new Usuario();
-        $usuario->setNome($_POST['nome']);
-        $usuario->setLogin($_POST['login']);
-        $usuario->setSenha($_POST['senha']);
+        
     }
 }

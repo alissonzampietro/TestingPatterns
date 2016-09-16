@@ -10,8 +10,6 @@ class Usuario
 
     private $senha;
 
-    private $cpf;
-
     private $ativo;
 
     public function getNome()
@@ -42,16 +40,6 @@ class Usuario
     public function setSenha($senha)
     {
         $this->senha = md5("p5b502a9".trim($senha));
-    }
-
-    public function getCpf()
-    {
-        return $this->cpf;
-    }
-
-    public function setCpf($cpf)
-    {
-        $this->cpf = trim($cpf);
     }
 
     public function getAtivo()

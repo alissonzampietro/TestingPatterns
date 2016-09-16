@@ -12,7 +12,7 @@ class UsuarioRepository extends TestCase
         $usuario = new Usuario();
         $usuario->setNome("Alisson Zampietro");
         $stub = $this->getMockBuilder("UsuarioRepository")->getMock();
-        $stub->method("persist")->willReturn($usuario->getNome());
+        $stub->expects($this->once())->method("persist")->willReturn($usuario->getNome());
         
         $this->assertEquals($usuario->getNome(), $stub->persist());
     }
