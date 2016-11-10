@@ -2,7 +2,7 @@
 
 namespace PatternCore\Parsers;
 
-class JsonParser
+class JsonParser implements Parser
 {
     public function encode($data)
     {

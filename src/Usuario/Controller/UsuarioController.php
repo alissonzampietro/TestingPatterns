@@ -11,8 +11,7 @@ class UsuarioController
     public function get()
     {
         $usuario = new UsuarioRepository();
-        $jsonParser = new JsonParser();
-        echo $jsonParser->encode(array("status"=>"200","data" => $usuario->getUsuarioList()));
+        return $usuario->getUsuarioList();
     }
     
     public function post()

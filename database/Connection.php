@@ -11,7 +11,7 @@ class Connection
     public static function getConnection()
     {
         if (self::$conn == NULL) {
-            self::$conn = new \PDO("mysql:host=172.17.0.2;dbname=colmeia", "root", "root");
+            self::$conn = new \PDO("mysql:host=127.0.0.1;dbname=colmeia", "root", "alisson299409");
         }
         return self::$conn;
     }
