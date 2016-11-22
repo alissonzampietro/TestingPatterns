@@ -1,8 +1,8 @@
 <?php
 namespace Pattern\Usuario\Repository;
 
-use Pattern\Connection;
 use PDO;
+use Pattern\Connection;
 use Pattern\Usuario\Model\Usuario;
 
 class UsuarioRepository
@@ -12,9 +12,9 @@ class UsuarioRepository
 
     private $conn;
 
-    public function __construct()
+    public function __construct(PDO $conn)
     {
-        $this->conn = Connection::getConnection();
+        $this->conn = $conn;
     }
 
     public function getUsuarioList()
